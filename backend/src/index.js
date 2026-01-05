@@ -25,6 +25,7 @@ app.use(cookieParser())
 // cors
 const allowedOrigins = [
     "http://localhost:5173",
+    "https://investment-green-five.vercel.app"
 
 ];
 app.use(cors({
