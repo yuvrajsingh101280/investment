@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 // import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dasboard";
+import CreateInvestment from "./pages/CreateInvestment";
 
 export default function App() {
   return (
