@@ -8,6 +8,7 @@ import cookieParser from "cookie-parser";
 import dashboardRoutes from "./routes/dashboard.routes.js"
 import testRoutes from "./routes/test.routes.js"
 import startDailyROICron from "./cron/dailyROI.cron.js"
+import axios from "axios"
 dotenv.config()
 
 const app = express()
