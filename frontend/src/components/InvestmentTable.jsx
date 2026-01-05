@@ -1,4 +1,4 @@
-export default function InvestmentTable({ investments }) {
+export default function InvestmentTable({ investments = [] }) {
   return (
     <div className="bg-white rounded-xl shadow p-6 mt-6">
       <h3 className="font-semibold mb-4">Your Investments</h3>
