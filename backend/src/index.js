@@ -51,7 +51,23 @@ app.get("/", (req, res) => {
 
 
 })
+// for reseting the uptime
+const url = "https://investment-6e4z.onrender.com/"
+const interval = 30000
 
+
+function reloadWebsite() {
+    axios
+        .get(url)
+        .then((res) => {
+            console.log("Website reloaded");
+        })
+        .catch((err) => {
+            console.log(`Error : ${err.message}`);
+        });
+}
+
+setInterval(reloadWebsite, interval);
 app.listen(port, () => {
 
     console.log(`Server is running at http://localhost:${port}`)
